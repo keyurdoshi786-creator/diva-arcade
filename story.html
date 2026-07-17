@@ -81,7 +81,7 @@ button{font-family:var(--body);cursor:pointer;border:none;background:none;color:
 /* ============ HERO ============ */
 #hero{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden;
  background:radial-gradient(120% 90% at 50% 0%,#1E4433 0%,#12291F 46%,#0C1B14 100%);color:var(--cream);padding:88px 20px 28px}
-#dust{position:absolute;inset:0;pointer-events:none}
+#dust{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 #hero .eyebrow{color:var(--sprig);animation:rise .9s .2s ease both}
 #hero h1{font-family:var(--display);font-style:italic;font-weight:600;font-size:clamp(76px,15vw,184px);line-height:.9;margin:8px 0 6px;
  background:linear-gradient(100deg,#F5EFE2 20%,#E8C98D 38%,#F5EFE2 52%,#C9A96A 72%,#F5EFE2 88%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rise .9s .32s ease both,shimmer 7s linear 1.4s infinite}
@@ -141,7 +141,7 @@ button{font-family:var(--body);cursor:pointer;border:none;background:none;color:
 .stage .flo.f3 img{animation-duration:6.8s;animation-delay:.7s}
 .stage[data-note] .flo{opacity:.28;filter:blur(1px) drop-shadow(0 16px 18px rgba(28,30,24,.1))}
 .stage[data-note="top"] .flo.f1,.stage[data-note="heart"] .flo.f3,.stage[data-note="base"] .flo.f2{opacity:1;filter:none;transform:scale(1.22)}
-.stage .mist{position:absolute;inset:0;z-index:4;pointer-events:none}
+.stage .mist{position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none}
 .spraybtn{position:absolute;z-index:5;bottom:calc(30px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);display:inline-flex;align-items:center;gap:9px;padding:12px 20px;border-radius:var(--r-pill);background:color-mix(in srgb,var(--white) 72%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);color:var(--deep);font-weight:700;font-size:12px;letter-spacing:.06em;box-shadow:var(--shadow);transition:transform .2s}
 .spraybtn:hover{transform:translateX(-50%) translateY(-2px)}
 .spraybtn:active{transform:translateX(-50%) scale(.95)}
