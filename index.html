@@ -729,7 +729,7 @@ function shareText() {
   const { win, pct } = G.last || { win: 'dq', pct: 92 };
   const p = P[win];
   const who = G.name ? `${G.name} is` : "I'm";
-  const link = location.protocol.startsWith('http') ? `\nPlay 👉 ${location.origin + '/'}` : '\n(Forward the Diva Arcade file in this chat to play 💌)';
+  const link = location.protocol.startsWith('http') ? `\nPlay 👉 ${location.origin + location.pathname.replace(/[^/]*$/, '')}` : '\n(Forward the Diva Arcade file in this chat to play 💌)';
   return `✨ ${who} ${pct}% ${p.name.toUpperCase()} ${p.emoji} ✨\n“${p.line}”\n${p.notesLong}\n\nWhich Diva are you? Take the 45-second test.${link}`;
 }
 /* Open WhatsApp without window.open — strict COOP on some hosts makes
